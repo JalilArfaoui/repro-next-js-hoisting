@@ -23,7 +23,7 @@ Open http://localhost:3000/ — the page crashes during hydration ("Une erreur e
 `theme.fonts.main` from a theme instance that is not the one the ThemeProvider provided).
 
 The browser console also shows the instrumentation warning from
-`source/design-system/theme.ts`:
+`source/design-system/root.tsx`:
 
 ```
 [repro] theme module evaluated 2 times: module-level singletons are duplicated
