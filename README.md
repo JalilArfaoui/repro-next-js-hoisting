@@ -1,5 +1,7 @@
 # Turbopack scope hoisting: merged module evaluated twice, duplicating module singletons
 
+Reproduction for https://github.com/vercel/next.js/issues/100139.
+
 Minimal-ish reproduction (8 source files (~220 lines), no monorepo, no custom loaders) of a Turbopack
 **production** bug: with scope hoisting enabled (the default), one merged module factory is
 executed **twice** in the browser, so every module-level singleton it contains exists twice.
